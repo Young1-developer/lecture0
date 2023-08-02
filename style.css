@@ -31,6 +31,13 @@ a{
     text-align: center;
     border-radius: 10px;
     border: none;
+    transition: 1s ease-in;
+    animation: btn 1s ease 1s infinite;
+}
+@keyframes btn {
+    0%{background-color: navy;}
+    30%{background-color: var(--color-primary);}
+    60%{background-color: #333;}
 }
 nav{
     background-color: #333;
@@ -97,7 +104,12 @@ nav{
    border-radius: 10px 0;
    background-color: var(--color-primary);
    color: #fff;
+   transition: 500ms ease;
 
+}
+.Boxes .box:hover{
+  box-shadow: 0 3rem 3rem 7rem rgba(0,0,0,0.7);
+  border-radius: 20px 0;
 }
 .qoute-section{
     background-color: #ccc;
@@ -135,6 +147,10 @@ nav{
     text-align: center;
     border-radius: 10px;
     border: 1px solid #fff;
+    transition: 1s ease;
+}
+.news-letter .btn-style-out:hover{
+    background-color: darkturquoise;
 }
 .news-letter .news-text{
     padding-left: 30px;
